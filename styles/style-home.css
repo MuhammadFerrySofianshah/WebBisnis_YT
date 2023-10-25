@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@300&display=swap");
+/* Globals Css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  color: black;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+}
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+body {
+  background-color: #e4e4e4;
+}
+
+/* Content-1 */
+section.content-1 {
+  background-image: url(../img/bg-contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* Sidebar */
+section.content-1 input#check {
+  display: none;
+}
+section.content-1 .sidebar {
+  margin-top: 70px;
+  position: fixed;
+  width: 100%;
+  left: -100%;
+  background-color: rgba(86, 95, 104, 0.534);
+  z-index: 9999;
+}
+section.content-1 .sidebar a {
+  display: block;
+}
+section.content-1 .sidebar ul li {
+  padding: 20px;
+  border-bottom: 1px solid #686868;
+}
+section.content-1 .sidebar ul li:hover {
+  background-color: #218fd3;
+  transition: 0.3s;
+  transition-property: background-color;
+}
+section.content-1 #check:checked ~ .sidebar {
+  left: 0;
+}
+.mobile-menu {
+  float: right;
+  display: none;
+}
+.mobile-menu i {
+  color: #ffffff;
+  font-size: 25px;
+}
+.mobile-menu i:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+/* Navbar */
+section.content-1 nav {
+  width: 100%;
+  line-height: 60px;
+  position: fixed;
+  z-index: 1;
+  padding: 5px 50px;
+}
+section.content-1 nav .in {
+  font-weight: bolder;
+  color: #ffffff;
+}
+section.content-1 .sticky {
+  transition: 0.6s;
+  padding: 5px 50px;
+  background-color: rgba(86, 95, 104, 0.6);
+  color: black;
+}
+section.content-1 nav img {
+  cursor: context-menu;
+  width: 100px;
+  height: auto;
+  float: left;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+section.content-1 nav img:hover {
+  transform: scale(1.1);
+}
+section.content-1 nav h1 {
+  font-size: 30px;
+  color: #ffffff;
+  float: left;
+}
+section.content-1 nav h1:hover {
+  cursor: context-menu;
+  transition: 0.3s;
+  color: #218fd3;
+}
+section.content-1 nav ul li {
+  list-style: none;
+  float: right;
+}
+section.content-1 nav ul li a {
+  text-align: center;
+  padding: 30px;
+  text-transform: uppercase;
+}
+section.content-1 nav ul li a:hover {
+  transition: 0.3s;
+  color: #218fd3;
+}
+section.content-1 .banner {
+  text-align: left;
+  padding: 170px 0 250px 0;
+}
+section.content-1 .banner h2 {
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  text-shadow: 3px 3px 3px black;
+}
+section.content-1 .banner p {
+  color: #ffffff;
+  width: 70%;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px black;
+}
+section.content-1 .banner button {
+  color: #ffffff;
+  font-weight: bold;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 3px 3px 3px black;
+  border: 2px solid;
+  width: 220px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+section.content-1 .banner button:hover {
+  color: black;
+  background: white;
+  border: 2px solid white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+/* Content-2 */
+section.content-2 {
+  margin: 50px 0;
+}
+section.content-2 .container {
+  padding: 40px 0;
+}
+section.content-2 .text {
+  text-align: center;
+}
+section.content-2 h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+section.content-2 p {
+  font-size: 18px;
+}
+/* Content-3 */
+section.content-3 {
+  margin: 50px 0;
+}
+section.content-3 .grid-teks-foto {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  grid-gap: 50px;
+}
+section.content-3 .grid-teks-foto img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+section.content-3 .grid-teks-foto h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 10px;
+}
+section.content-3 .grid-teks-foto .border {
+  margin: 5px 50px 0 50px;
+  border-bottom: 1px solid;
+}
+section.content-3 .grid-teks-foto p {
+  margin: 10px;
+}
+section.content-3 .grid-teks-foto article {
+  box-shadow: 0 0 10px 0 #686868;
+  border-radius: 10px;
+  background-color: #ffffff;
+  width: 260px;
+  height: 100%;
+}
+/* Content-4 */
+section.content-4 {
+  margin: 50px 0;
+}
+section.content-4 .container {
+  text-align: center;
+  font-size: 18px;
+}
+section.content-4 .hubungisekarang {
+  margin: 30px;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #5ccc00;
+  border: #5ccc00;
+  border-radius: 20px;
+  width: 200px;
+}
+section.content-4 .hubungisekarang:hover {
+  transition: 0.3s;
+  background-color: #8ccc00;
+}
+/* Content-5 */
+section.content-5 .grid-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 9fr);
+  grid-gap: 50px;
+  align-items: center;
+  text-align: center;
+  margin: 75px;
+}
+section.content-5 .grid-menu article {
+  height: 500px;
+  box-shadow: 0 0 10px #686868;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+section.content-5 .grid-menu img {
+  width: 100%;
+  height: 500px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* Content-6 */
+section.content-6 {
+  margin: 50px 0;
+}
+section.content-6 .container .teks {
+  text-align: center;
+  margin-bottom: 20px;
+}
+section.content-6 .container .maps iframe {
+  width: 100%;
+}
+/* Footer */
+footer {
+  background-color: #919191;
+  text-align: center;
+  font: bold 16px sans-serif;
+  padding: 30px;
+  color: white;
+}
+/* Responsive */
+
+@media (max-width: 910px) {
+  /* Button bar */
+  .mobile-menu {
+    display: block;
+    margin-top: 5px;
+    height: 0;
+  }
+  /* Nav Menu */
+  nav ul {
+    display: none;
+  }
+  /* grid foto */
+  section.content-3 .grid-teks-foto {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* grid menu */
+  section.content-5 .grid-menu {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section.content-5 .grid-menu p {
+    font-size: 17px;
+  }
+  /* Content-2 */
+  section.content-2 {
+    padding: 40px 0;
+  }
+  section.content-2 p {
+    width: 100%;
+  }
+  /* Content-6 */
+  section.content-6 .maps-teks {
+    padding: 40px 0;
+  }
+  section.content-6 .mate {
+    padding: 10px;
+    float: none;
+  }
+}
+@media (min-width: 910px) {
+  section.content-1 .sidebar {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  /* MOBILE */
+  /* Navigation */
+  nav {
+    width: 100%;
+    line-height: 60px;
+    z-index: 1;
+    transition: 0.6s;
+    padding: 5px 20px;
+  }
+  nav h1 {
+    font-size: 18px;
+  }
+  nav.sticky {
+    padding: 5px 20px;
+  }
+  nav img {
+    cursor: context-menu;
+    width: 80px;
+    height: auto;
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  /* Banner */
+  .banner {
+    padding: 100px 0 200px 0;
+    text-align: center;
+  }
+  .banner h2 {
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    font-size: 55px;
+    text-shadow: 3px 3px 3px black;
+    padding-bottom: 20px;
+  }
+  .banner p {
+    width: 100%;
+    color: #ffffff;
+    text-shadow: 3px 3px 3px black;
+  }
+  .banner button {
+    color: #ffffff;
+    font-weight: bold;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 3px 3px 3px black;
+    border: 2px solid;
+    width: 220px;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+  /* Content-3 Teks-foto */
+  .content-3 .container .grid-teks-foto {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  .content-3 .container .grid-teks-foto article {
+    width: 100%;
+  }
+  /* Grid Menu */
+  .grid-menu {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+  .grid-menu article {
+    background-color: #ffffff;
+    width: 100%;
+  }
+  .grid-menu p {
+    font-size: 17px;
+  }
+  /* Tentang Kami */
+  section.content-2 {
+    padding: 40px 0;
+  }
+  section.content-2 p {
+    width: 100%;
+  }
+}

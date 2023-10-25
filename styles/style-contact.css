@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@300&display=swap');
+/* Globals Css */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+}
+.container {
+  margin: auto;
+  width: 90%;
+}
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+}
+a {
+  text-decoration: none; 
+  font-size: 18px;
+  color: white;
+}
+body {
+  background-color: #e4e4e4;
+}
+
+/* Content-1 */
+section.content-1 {
+  background-image: url(../img/bg-contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* Sidebar */
+section.content-1 input#check {
+  display: none;
+}
+section.content-1 .sidebar {
+  margin-top: 70px;
+  position: fixed;
+  width: 100%;
+  left: -100%;
+  background-color: rgba(86, 95, 104, 0.534);
+  z-index: 9999;
+}
+section.content-1 .sidebar a {
+  display: block;
+}
+section.content-1 .sidebar ul li {
+  padding: 20px;
+  border-bottom: 1px solid #686868;
+}
+section.content-1 .sidebar ul li:hover {
+  background-color: #218fd3;
+  transition: .3s;
+  transition-property: background-color;
+}
+section.content-1 #check:checked ~ .sidebar {
+  left: 0;
+}
+.mobile-menu {
+  float: right;
+  display: none;
+}
+.mobile-menu i {
+  color: #FFFFFF;
+  font-size: 25px;
+}
+.mobile-menu i:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+/* Navbar */
+nav {
+  width: 100%;
+  line-height: 60px;
+  position: fixed;
+  z-index: 1;
+  padding: 5px 50px;
+}
+nav .in {
+  font-weight: bolder;
+  color: #FFFFFF;
+}
+.sticky {
+  transition: .6s;
+  padding: 5px 50px;
+  background-color: rgba(86, 95, 104, 0.600);
+  color: black;
+}
+nav img {
+  cursor: context-menu;
+  width: 100px;
+  height: auto;
+  float: left;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+nav img:hover {
+  transform: scale(1.1);
+}
+
+nav h1 {
+  font-size: 30px;
+  color: #FFFFFF;
+  float: left;
+  text-transform: uppercase;
+}
+nav h1:hover {
+  cursor: context-menu;
+  transition: .3s;
+  color: #218fd3;
+}
+nav ul li  {
+  list-style: none;
+  float: right;
+}
+nav ul li a {
+  text-align: center;
+  padding: 30px;
+}
+nav ul li a:hover {
+  color: #218fd3;
+}
+/* Judul */
+.judul {
+  text-align: center;
+  padding: 150px 0;
+}
+.judul h1 {
+  color: #FFFFFF;
+  font-size: 40px;
+}
+.judul p {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+/* Content-2 */
+section.content-2 .container {
+  padding: 50px 0;
+}
+section.content-2 .container .row {
+  justify-content: center;
+  display: flex;
+}
+/* left */
+section.content-2 .container .row .col-left {
+  width: 50%;
+}
+section.content-2 .container .row .col-left h1 {
+  font-size: 40px;
+}
+section.content-2 .container .row .col-left p {
+  font-size: 16px;
+  color: gray;
+  margin: 1rem 2rem 2rem 0;
+}
+section.content-2 .container .row .col-left .link {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+section.content-2 .container .row .col-left i {
+  font-size: 25px;
+  color: #04AA6D;
+  margin-right: 10px;
+}
+section.content-2 .container .row .col-left a {
+  font-size: 16px;
+  color: gray;
+}
+section.content-2 .container .row .col-left a:hover {
+  transition: .3s;
+  color: black;
+}
+/* right */
+section.content-2 .container .row .col-right {
+  width: 50%;
+}
+section.content-2 .container .row .col-right input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+section.content-2 .container .row .col-right button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+section.content-2 .container .row .col-right button:hover {
+  background-color: #45a049;
+}
+@media (max-width: 910px){
+  /* BAGIAN GARIS 3 */
+  .mobile-menu {
+      display: block;
+      margin-top: 5px;
+      height: 0;
+  }
+  /* BAGIAN NAVIGASI MENU */
+  nav ul {
+      display: none;
+  }
+}
+@media (max-width: 768px) {
+  section.content-2 .container .row {
+    display: block;
+  }
+  section.content-2 .container .row .col-left {
+    width: 100%;
+  }
+  section.content-2 .container .row .col-right {
+    width: 100%;
+
+  }
+}
+@media (max-width: 550px){
+  /* BAGIAN NAVIGATION */
+  nav {
+      width: 100%;
+      line-height: 60px;
+      position: fixed;
+      z-index: 1;
+      transition: .6s;
+      padding: 5px 20px;
+  }
+  nav .sbt {
+      font-size: 18px;
+  }
+  nav.sticky {
+      padding: 5px 20px;
+  }
+  nav img {
+      cursor: context-menu;
+      width: 80px;
+      height: auto;
+      float: left;
+      margin-top: 5px;
+      margin-right: 5px;
+  }
+}

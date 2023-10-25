@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@300&display=swap");
+/* Globals css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  color: black;
+}
+.container {
+  width: 90%;
+}
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+body {
+  background-color: #e4e4e4;
+}
+
+/* Content-1 */
+section.content-1 {
+  background-image: url(../img/bg-gallery.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* Sidebar */
+section.content-1 input#check {
+  display: none;
+}
+section.content-1 .sidebar {
+  margin-top: 70px;
+  position: fixed;
+  width: 100%;
+  left: -100%;
+  background-color: rgba(86, 95, 104, 0.534);
+  z-index: 9999;
+}
+section.content-1 .sidebar a {
+  display: block;
+}
+section.content-1 .sidebar ul li {
+  padding: 20px;
+  border-bottom: 1px solid #686868;
+}
+section.content-1 .sidebar ul li:hover {
+  background-color: #218fd3;
+  transition: 0.3s;
+  transition-property: background-color;
+}
+section.content-1 #check:checked ~ .sidebar {
+  left: 0;
+}
+.mobile-menu {
+  float: right;
+  display: none;
+}
+.mobile-menu i {
+  color: #ffffff;
+  font-size: 25px;
+}
+.mobile-menu i:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+/* Navbar */
+section.content-1 nav {
+  width: 100%;
+  line-height: 60px;
+  position: fixed;
+  z-index: 1;
+  padding: 5px 50px;
+}
+section.content-1 nav .in {
+  font-weight: bolder;
+  color: #ffffff;
+}
+section.content-1 .sticky {
+  transition: 0.6s;
+  padding: 5px 50px;
+  background-color: rgba(86, 95, 104, 0.6);
+  color: black;
+}
+nav img {
+  cursor: context-menu;
+  width: 100px;
+  height: auto;
+  float: left;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+section.content-1 nav img:hover {
+  transform: scale(1.1);
+}
+section.content-1 nav h1 {
+  font-size: 30px;
+  color: #ffffff;
+  float: left;
+  text-transform: uppercase;
+}
+section.content-1 nav h1:hover {
+  cursor: context-menu;
+  transition: 0.3s;
+  color: #218fd3;
+}
+section.content-1 nav ul li {
+  list-style: none;
+  float: right;
+}
+section.content-1 nav ul li a {
+  text-align: center;
+  padding: 30px;
+}
+section.content-1 nav ul li a:hover {
+  color: #218fd3;
+}
+/* Judul */
+section.content-1 .judul {
+  text-align: center;
+  padding: 150px 0;
+}
+section.content-1 .judul p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 200;
+}
+/* Content-2 */
+section.content-2 {
+  padding: 100px 0 0 0;
+}
+section.content-2 h1 {
+  color: black;
+  text-align: center;
+}
+section.content-2 .border {
+  border-bottom: 1px solid;
+}
+section.content-2 article {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 25px 0 100px 30px; /*atas bawah kanan kiri */
+}
+section.content-2 article img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+}
+/* Footer */
+footer {
+  background-color: #919191;
+  text-align: center;
+  font: bold 16px sans-serif;
+  padding: 30px;
+  color: white;
+}
+
+/* resposnsive */
+@media (max-width: 910px) {
+  /* Button Bar */
+  .mobile-menu {
+    display: block;
+    margin-top: 5px;
+    height: 0;
+  }
+  /* Navbar Menu */
+  section.content-1 nav ul {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  /* Navbar */
+  section.content-1 nav {
+    width: 100%;
+    line-height: 60px;
+    position: fixed;
+    z-index: 1;
+    transition: 0.6s;
+    padding: 5px 20px;
+  }
+  section.content-1 nav h1 {
+    font-size: 18px;
+  }
+  section.content-1 nav.sticky {
+    padding: 5px 20px;
+  }
+  section.content-1 nav img {
+    cursor: context-menu;
+    width: 80px;
+    height: auto;
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  /* content-2 */
+  section.content-2 {
+    padding: 100px 0 0 0;
+  }
+  section.content-2 h1 {
+    color: black;
+    text-align: center;
+  }
+  section.content-2 article {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 25px 0 100px 0; /*atas bawah kanan kiri */
+  }
+  section.content-2 article img {
+    width: 150px;
+    height: 200px;
+  }
+}
